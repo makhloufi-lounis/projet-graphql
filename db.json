@@ -23,12 +23,6 @@
       "firstName": "Maxime",
       "age": 24,
       "companyId": "3"
-    },
-    {
-      "firstName": "Damien",
-      "age": 32,
-      "companyId": "1",
-      "id": "PHm2Vcy"
     }
   ],
   "companies": [
