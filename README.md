@@ -1,4 +1,4 @@
-## projet-graphql - Formation Graphql ##
+## Projet-graphql - Formation Graphql ##
 
 ## Installation ##
 Aller dans le repertoire racine et taper :
