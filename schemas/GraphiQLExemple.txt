@@ -1,0 +1,40 @@
+//query for userDetails by id
+
+query{
+  user(id: "PHm2Vcy"){
+    firstName,
+    age
+  }
+}
+
+//query for users list by campany
+
+query{
+  microsfInfo :campany(id: "3"){
+    name,
+    user{
+      ...userDetails
+    }
+  },
+  appeleInfo : campany(id: "1"){
+    name,
+    user {
+      ...userDetails
+    }
+  }
+}
+
+// fragment for multiple request
+fragment userDetails on User {
+  firstName,
+  age,
+  id
+}
+
+//query mutation save user
+mutation{
+  addUser(firstName: "Damien", age:32, companyId: "1"){
+    id,
+    firstName
+  }
+}
